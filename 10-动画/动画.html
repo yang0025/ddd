@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background-image: url(lxw-2.jpg);
+          
+           
+
+            
+        }
+
+        ul {
+            /* 去掉小圆点 */
+            list-style: none;
+            /* 去掉上下的外边距 */
+            margin: 0;
+            /* 去掉左右的内边距 */
+            padding: 0;
+            position: absolute;
+            bottom: 30px;
+            left: -300px;
+
+        }
+
+        a {
+            color: #fff;
+            /* 去掉下划线 */
+            text-decoration: none;
+            background-color: rgba(200, 200, 200, 0.3);
+            /*  */
+            padding: 8px 15px;
+            display: inline-block;
+            margin-bottom: 8px;
+            position: relative;
+            /* 设置动画的名称,时间,速度 */
+            animation-name: move;
+            animation-duration: 1s;
+            animation-timing-function: linear;
+            /* 保持动画的连贯性,将动画保留在结束位置 */
+            animation-fill-mode: both;
+            border-top-right-radius: 3px;
+            border-bottom-right-radius: 3px;
+           
+        }
+
+        @keyframes move {
+            0% {
+                transform:translateX(0);
+            }
+            100% {
+                transform:translateX(300px);
+            }
+
+        }
+
+        /* 注意!!!!!!!!! */
+
+        a i.fa {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            font-size: 20px;
+        }
+
+        li:nth-child(1) a {
+            padding-right: 40px;
+            animation-delay: -0.5s;
+            
+        }
+
+
+        li:nth-child(2) a {
+            padding-right: 70px;
+            animation-delay: 0.2s;
+        }
+
+        li:nth-child(3) a {
+            padding-right: 110px;
+            animation-delay: 1s;
+        }
+
+        li:nth-child(4) a {
+            padding-right: 60px;
+            animation-delay: 1.5s;
+        }
+
+        li:nth-child(5) a {
+            padding-right: 80px;
+            animation-delay: 2s;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ul:是放置无序列表的容器标签,直系子元素只能是li
+         li:列类表项标签 -->
+    <ul>
+        <li>
+            <a href="">楼盘详情
+                <i class="fa fa-angle-right"></i>
+            </a>
+        </li>
+
+        <li>
+            <a href="">全景户型
+                <i class="fa fa-angle-right"></i>
+            </a>
+        </li>
+
+        <li>
+            <a href="">项目图册
+                <i class="fa fa-angle-right"></i>
+            </a>
+        </li>
+
+        <li>
+            <a href="">预约看房
+                <i class="fa fa-angle-right"></i>
+            </a>
+        </li>
+        <li>
+            <a href="">房贷款计算
+                <i class="fa fa-angle-right"></i>
+            </a>
+        </li>
+
+    </ul>
+
+</body>
+
+</html>
